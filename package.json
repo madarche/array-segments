@@ -1,0 +1,45 @@
+{
+  "name": "array-segments",
+  "version": "1.0.0",
+  "description": "Finds element segments matches in an array",
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madarche/array-segments.git"
+  },
+  "keywords": [
+    "array",
+    "segments",
+    "consecutive",
+    "find",
+    "match",
+    "elements",
+    "span"
+  ],
+  "author": "Marc-Aurèle DARCHE <ma.darche@cynode.org> (https://github.com/madarche)",
+  "license": "MIT",
+  "homepage": "https://github.com/madarche/array-segments",
+  "devDependencies": {
+    "coveralls": "2.11.15",
+    "eslint": "3.10.2",
+    "eslint-config-usecases": "1.1.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.1.2",
+    "mocha-lcov-reporter": "1.2.0",
+    "must": "0.13.2"
+  },
+  "scripts": {
+    "test": "npm run test:unit && npm run lint",
+    "test:unit": "mocha --check-leaks test/unit/*.test.js",
+    "test:coverage": "istanbul cover _mocha -- --check-leaks test/*.test.js",
+    "posttest:coverage": "npm run lint",
+    "test:ci": "istanbul cover _mocha -- --check-leaks test/*.test.js && cat test/coverage/lcov.info | coveralls",
+    "posttest:ci": "npm run lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "clean": "rm -rf test/coverage"
+  }
+}
