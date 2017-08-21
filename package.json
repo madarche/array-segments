@@ -1,6 +1,6 @@
 {
   "name": "array-segments",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Finds element segments matches in an array",
   "engines": {
     "node": ">=6"

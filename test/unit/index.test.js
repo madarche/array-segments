@@ -3,7 +3,7 @@
 // const expect = require('must')
 require('must')
 
-const array_segments = require('../../')
+const array_segments = require('../..')
 
 describe('array-segments', () => {
 
