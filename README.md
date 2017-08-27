@@ -8,7 +8,7 @@ Finds element segments matches in an array.
 Usage
 -----
 
-```js
+```javascript
 const array_segments = require('array-segments');
 
 let res
