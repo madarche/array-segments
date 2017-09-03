@@ -2,6 +2,8 @@
 array-segments
 ==============
 
+[![NPM version](http://img.shields.io/npm/v/array-segments.svg)](https://www.npmjs.org/package/array-segments)
+
 Finds element segments matches in an array.
 
 
