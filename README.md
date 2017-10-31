@@ -40,7 +40,7 @@ res = array_segments.match(
         ['a', 'b'],
         ['a']
     ],
-    true)
+    {ignore_case: true})
 
 console.log(res)
 // [ { segment: [ 'c', 'd', 'e' ], indices: [ 2 ] },

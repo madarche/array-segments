@@ -34,7 +34,7 @@ describe('array-segments', () => {
                 ['a', 'b'],
                 ['a']
             ],
-            true)
+            {ignore_case: true})
         res.must.be.eql([
             {segment: ['c', 'd', 'e'], indices: [2]},
             {segment: ['a', 'z'], indices: [6]},

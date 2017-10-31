@@ -1,7 +1,7 @@
 'use strict'
 
-function match(array, segments, case_insensitive) {
-    if (case_insensitive) {
+function match(array, segments, options = {}) {
+    if (options.ignore_case) {
         array = array.map((el) => {
             return el.toLowerCase()
         })
@@ -11,7 +11,7 @@ function match(array, segments, case_insensitive) {
     let used = []
 
     return segments.reduce((matches, segment) => {
-        if (case_insensitive) {
+        if (options.ignore_case) {
             segment = segment.map((el) => {
                 return el.toLowerCase()
             })
